@@ -1,0 +1,385 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            .row{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .align-center{
+                align-items: center;
+                text-align: center;
+                width: 60%;
+            }
+            .flexcenter{
+                display: flex;
+                justify-content: center;
+            }
+            .download-btn{
+                background-color: #bd9e20;
+                border-style: solid;
+                border-color: #bd9e20;
+                border-radius: 30px;
+                color: white;
+                padding: 10px 20px;
+                margin-top: 10px;
+                margin-right: 10px ;
+                transition-duration: 0.1s;
+                text-decoration: none;
+                cursor: pointer;
+                align-items: center;
+                width: fit-content;
+            }
+            .download-btn:hover{
+                background-color: #a9a38900;
+                border-style: solid;
+                border-color: #bd9e20;
+                border-radius: 30px;
+                color: #bd9e20;
+                padding: 15px 30px;
+                margin-top: 10px;
+                margin-right: 10px;
+                text-decoration: none;
+                cursor: pointer;
+                align-items: center;
+                box-shadow: 0px 0px 15px ;
+            }
+            .learnmore-btn{
+                border-style: solid;
+                border-color: #bd9e20;
+                border-radius: 30px;
+                color: #bd9e20;
+                padding: 10px 29px;
+                margin-top: 10px;
+                margin-right: 10px ;
+                background-color: #3330;
+                transition-duration: 0.1s;
+                text-decoration: none;
+                cursor: pointer;
+                align-items: center;
+                width: fit-content;
+            }
+            
+            .learnmore-btn:hover{
+                background-color: #bd9e20;
+                border-style: solid;
+                border-color: #bd9e20;
+                border-radius: 30px;
+                color: white;
+                padding: 15px 40px;
+                margin-top: 10px;
+                margin-right: 10px;
+                text-decoration: none;
+                cursor: pointer;
+                box-shadow: 0px 0px 15px #bd9e20;
+                align-items: center;
+            }
+            .header-btn{
+                border-style: solid;
+                border-color: #2d1dc3;
+                border-radius: 30px;
+                color: #2d1dc3;
+                padding: 5px 10px;
+                margin-top: 10px;
+                margin-right: 10px ;
+                background-color: #3330;
+                transition-duration: 0.1s;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .header-btn:hover{
+                background-color: #2d1dc3;
+                border-style: solid;
+                border-color: #2d1dc3;
+                border-radius: 30px;
+                color: white;
+                padding: 10px 15px;
+                margin-top: 10px;
+                margin-right: 10px;
+                text-decoration: none;
+                cursor: pointer;
+                box-shadow: 0px 0px 15px #0030cc;
+            }
+            .space{
+                height: 100px;
+            }
+            .back{
+                background-image: url(ice.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .color-white{
+                color: white;
+            }
+            .maindiv{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            h1{
+                color: gray;
+            }
+            .text{
+                color: rgb(72, 69, 69);
+            }
+            .aligncenter{
+                align-items: center;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+            .line{
+                background-color: orange;
+                border-radius: 5px;
+                width: 50px;
+                height: 5px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .center{
+                display: flex;
+                justify-content: center;
+            }
+            .h1{
+                color: gray;
+            }
+            .h3{
+                color: gray;
+                width: 50%;
+                text-align: center;
+            }
+            .items{
+                align-items: center;
+            }
+            .input{
+                border-style: solid;
+                border-color: #bd9e20;
+                color: white;
+                width: 97%;
+                border-radius: 4px;
+                background-color: #495468;
+            }
+            
+            .input2{
+                border-style: solid;
+                border-color: #bd9e20;
+                color: white;
+                width: 59%;
+                border-radius: 4px;
+                background-color: #495468;
+            }
+            .input3{
+                border-style: solid;
+                border-color: #bd9e20;
+                color: white;
+                width: 59%;
+                border-radius: 4px;
+                background-color: #495468;
+            }
+            
+            .small-btn{
+                border-style: solid;
+                border-color: #bd9e20;
+                border-radius: 30px;
+                color: #bd9e20;
+                padding: 10px 29px;
+                margin-top: 10px;
+                margin-right: 10px ;
+                background-color: #3330;
+                transition-duration: 0.1s;
+                text-decoration: none;
+                cursor: pointer;
+                align-items: center;
+                width: fit-content;
+            }
+            
+            .small-btn:hover{
+                background-color: #bd9e20;
+                border-style: solid;
+                border-color: #bd9e20;
+                border-radius: 30px;
+                color: white;
+                padding: 15px 40px;
+                margin-top: 10px;
+                margin-right: 10px;
+                text-decoration: none;
+                cursor: pointer;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="back">
+            <div class="row columin">
+                <div class="col-sm-2" style="font-size: xx-large; display: flex; justify-content: center;"><span style="color: white;">ba</span><span style="color: orange;">ker</span></div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-1 color-white header-btn" style=" display: flex; justify-content: center;">HOME</div>
+                <div class="col-sm-1 color-white header-btn" style=" display: flex; justify-content: center;">ABOUT</div>
+                <div class="col-sm-1 color-white header-btn" style=" display: flex; justify-content: center;">SERVICES</div>
+                <div class="col-sm-1 color-white header-btn" style=" display: flex; justify-content: center;">PORTFOLIO</div>
+                <div class="col-sm-1 color-white header-btn" style=" display: flex; justify-content: center; width: fit-content;">TESTMIMONIAL</div>
+                <div class="col-sm-1 color-white header-btn" style=" display: flex; justify-content: center;">BLOG</div>
+                <div class="col-sm-1 color-white header-btn" style="width: 10%;">CONTACT US</div>
+            </div>
+            <div class="flexcenter color-white" style="margin-top: 150px;"><h4>WE ARE AT BAKER</h4></div>
+            <div class="flexcenter color-white"> <h1>STARTING A NEW JOURNAY</h1></div>
+            <div class="flexcenter"> <div class="align-center color-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia odio a augue auctor, et mollis enim pellentesque. Aenean sit amet ullamcorper turpis. Suspendisse dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia odio a augue auctor, et mollis enim pellentesque. Aenean sit amet ullamcorper turpis. Suspendisse dapibus.</div></div>
+            <div style="display: flex; flex-direction: row;" class="flexcenter">
+            <div class="flexcenter aligncenter"><a class="download-btn" href="err.png">DOWNLOAD NOW</a></div> <br><br>
+            <div><a class="learnmore-btn aligncenter" href="https://www.register.com/my-account/login">REGISTER</a></div>
+            </div>
+            <div class="space"></div>
+            <div class="space"></div>
+        </div>
+        <div style="height: 40px;"></div>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-sm-3 maindiv"><img src="1.png"></div>
+            <div class="col-sm-3 maindiv"><img src="2.png"></div>
+            <div class="col-sm-3 maindiv"><img src="3.png"></div>
+            <div class="col-sm-3 maindiv"><img src="4.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 maindiv"><h1>Creative concept</h1></div>
+            <div class="col-sm-3 maindiv"><h1>amazing desgin</h1></div>
+            <div class="col-sm-3 maindiv"><h1>cost effective</h1></div>
+            <div class="col-sm-3 maindiv"><h1>seruce</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 maindiv text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus diam quis lorem tristique, nec pellentesque nulla eleifend. Suspendisse.</div>
+            <div class="col-sm-3 maindiv text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus diam quis lorem tristique, nec pellentesque nulla eleifend. Suspendisse.</div>
+            <div class="col-sm-3 maindiv text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus diam quis lorem tristique, nec pellentesque nulla eleifend. Suspendisse.</div>
+            <div class="col-sm-3 maindiv text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus diam quis lorem tristique, nec pellentesque nulla eleifend. Suspendisse.</div>
+        </div>
+        <div class="space"></div>
+        <div style="background-color: #ded8d8;">
+            <div class="space"></div>
+            <div class="flexcenter"><h1>WHAT WE DO</h1></div>
+            <div class="flexcenter aligncenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit et eros id. consectetur adipiscing elit. Integer suscipit et eros id.</div>
+            <div class="row"><div class="col-sm-4"></div><div class="col-sm-4 aligncenter"><div class="line"></div></div><div class="col-sm-4"></div></div>
+            <div class="row aligncenter">
+                <div class="col-sm-3"><h1> Desgin and developmet </h1></div>
+                <div class="col-sm-3"><h1>  Website maintenance </h1></div>
+                <div class="col-sm-3"><h1>  Seo optimization </h1></div>
+                <div class="col-sm-3"><h1>  Digital marketing </h1></div>
+            </div>
+            
+            <div class="row" style="padding: 20px;">
+                <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit et eros id. consectetur adipiscing elit. Integer suscipit et eros id.</div>
+                <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit et eros id. consectetur adipiscing elit. Integer suscipit et eros id.</div>
+                <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit et eros id. consectetur adipiscing elit. Integer suscipit et eros id.</div>
+                <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit et eros id. consectetur adipiscing elit. Integer suscipit et eros id.</div>
+            </div>
+            <div class="row" style="padding: 20px;">
+                <div class="col-sm-3" style="color: yellow; cursor: pointer;">learn more...</div>
+                <div class="col-sm-3" style="color: yellow; cursor: pointer;">learn more...</div>
+                <div class="col-sm-3" style="color: yellow; cursor: pointer;">learn more...</div>
+                <div class="col-sm-3" style="color: yellow; cursor: pointer;">learn more...</div>
+            </div>
+            <div class="space"></div>
+        </div>
+        <div class="space"></div>
+        <div>
+            <div class="center"><h1 class="h1">OUR RECENT WORKS</h1></div>
+            <div class="center"><h3 class="h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus diam quis lorem tristique, nec pellentesque nulla eleifend. Suspendisse.</h3></div>
+            <div class="center"><div class="line"></div></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 aligncenter"><img src="11.png"></div>
+            <div class="col-sm-4 aligncenter"><img src="22.png"></div>
+            <div class="col-sm-4 aligncenter"><img src="33.png"></div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-4 aligncenter"><img src="44.png"></div>
+            <div class="col-sm-4 aligncenter"><img src="55.png"></div>
+            <div class="col-sm-4 aligncenter"><img src="66.png"></div>
+        </div>
+        <div class="space"></div>
+        <div>
+            <div class="center"><h1>LATEST FROM OUR BLOG</h1></div>
+            <div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6"><div class="center aligncenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus diam quis lorem tristique, nec pellentesque nulla eleifend. Suspendisse.</div></div>
+                <div class="col-sm-3"></div>
+            </div>
+            <br><br>
+            <div class="center"><div class="line"></div></div>
+            <div class="space"></div>
+        </div>
+        <div class="row aligncenter">
+            <div class="col-sm-4">
+                <div><img src="111.png"  width="80%" height="80%"></div>
+                <div><h3>This Is Lorem Ipsum Heading</h3></div>
+                <div>posted in: legal advice</div>
+                <br><br>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque finibus diam quis lorem tristique, nec pellentesque
+                    nulla eleifend. Suspendisse.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.</div>
+                <div>read more <span class="glyphicon">&#xe092;</span></div>
+            </div>
+            <div class="col-sm-4">
+                <div><img src="222.png" width="80%" height="80%"></div>
+                <div><h3>This Is Lorem Ipsum Heading</h3></div>
+                <div>posted in: legal advice</div>
+                <br><br>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque finibus diam quis lorem tristique, nec pellentesque
+                    nulla eleifend. Suspendisse.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.</div>
+                <div>read more <span class="glyphicon">&#xe092;</span></div>
+            </div>
+            <div class="col-sm-4">
+                <div><img src="333.png" width="80%" height="80%"></div>
+                <div><h3>This Is Lorem Ipsum Heading</h3></div>
+                <div>posted in: legal advice</div>
+                <br><br>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque finibus diam quis lorem tristique, nec pellentesque
+                    nulla eleifend. Suspendisse.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.</div>
+                <div>read more <span class="glyphicon">&#xe092;</span></div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <br>
+        <br>
+        <br>
+        <div style="background-color: #495468;">
+            <div>
+                <div class="center"><h1 style="color: white; padding-top: 30px; padding-bottom: 10px;">KEEP IN TUCH WITH US</h1></div>
+                <div class="center"><div style="align-items: center; width: 50%; color: white; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque finibus diam quis lorem tristique Quisque finibus diam quis lorem tristique</div></div>
+                <div class="center"><div class="line"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" style="margin-bottom: 150px;">
+                    
+                    <div><p style="margin-top: 15px; padding-left: 20px; position: absolute; color: yellow;"><span class="glyphicon glyphicon-send"></span></p></div>
+                    <div><div style="width: 26%; padding-left: 50px; color: white;"> A99 adam street texas, TX 555072</div></div>
+                    <br>
+                    <div><p style= "padding-left: 20px; position: absolute; color: yellow;"><span class="glyphicon glyphicon-user"></span></p></div>
+                    <div><span style="width: 13%; padding-left: 50px;color: white;"> info@baker.com </span></div>
+                    <br>
+                    <div><p style="padding-left: 20px; position: absolute; color: yellow;"><span class="glyphicon glyphicon-earphone"></span></span></p></div>
+                    <div><span style="width: 13%; padding-left: 50px;color: white;"> +41 7394 4872</span></div>
+                </div>
+                <div class="col-sm-6">
+                    <div style="display: flex; flex-direction: row;">
+                    <span><input type="text" id="fname" name="fname" placeholder="name" class="input"><br><br></span>
+                    <span><input type="text" id="fname" name="fname" placeholder="email" class="input"><br><br></span>
+                    </div>
+                    <div><input type="text" id="fname" name="fname" placeholder="subject" class="input2"><br><br></div>
+                    <div><textarea id="w3review" name="w3review" rows="4" cols="50" class="input3" placeholder="massage"></textarea></div>
+                    <div><button class="learnmore-btn">send now</button></div>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="center"> <div>Baker Theme. all rights reserved. desgin by:<span style="color: #bd9e20;"> bootstrap templates </span></div></div>
+    </body>
+</html>
